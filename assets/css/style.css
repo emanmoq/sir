@@ -575,3 +575,8 @@ margin-bottom: 20px;;
         font-size:14px;
     }
 }
+@media(min-width:1024px) and (max-width:1200px){
+    .main {
+        padding: 146px 0 121px;
+    }
+}
