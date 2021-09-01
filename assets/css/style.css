@@ -382,11 +382,11 @@ transition: all .5s;;
     animation:sticky;
 }
 .navbar-toggler{
-    border-radius: 8px;
-    width: 45px;
-    height: 39px;
+    border-radius: 3px;
+    width: 35px;
+    height: 27px;
     position: relative;
-    padding:7px;
+    padding:3px;
     border:1px solid #48C2C9
 }
 .navbar-toggle i{
@@ -394,9 +394,13 @@ content:"";
 background-color: #48C2C9;
 display: block;
 margin:auto;
-margin-bottom: 5px;
-width:90%;
-height: 3px;
+margin-bottom: 3px;
+width:97%;
+height: 2px;
+}
+.navbar-toggler-icon{
+width:97%;
+height:auto;
 }
 .navbar-toggle i:last-child{
     margin-bottom: 0;
@@ -499,7 +503,10 @@ height: 3px;
 .progress__bar {
     height: 30px;
 }
-
+.mobileLang{
+    width: 40px;;
+    padding:5px;
+}
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:14px;
@@ -551,7 +558,9 @@ margin-bottom: 20px;;
 
 }
 .welcomeImg{
-    width: 100%;;
+    width: 70%;
+    margin:auto;
+    float: none !important;
 }
 .modalForm label.cardinput{
     width:60%;
@@ -563,6 +572,9 @@ margin-bottom: 20px;;
 .welcomeText{
     width:100%;
 }
+.footerBG {
+    bottom: -30%;
+    height: 50%;}
 }
 @media(min-width:767px) and (max-width:1024px){
     .welcomeImg{
@@ -573,6 +585,10 @@ margin-bottom: 20px;;
     }
     body{
         font-size:14px;
+    }
+    .footerBG {
+        bottom: -30%;
+        height: 50%;}
     }
 }
 @media(min-width:1024px) and (max-width:1200px){
