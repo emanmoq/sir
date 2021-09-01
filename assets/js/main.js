@@ -32,5 +32,8 @@ jQuery(function ($) {
       }
     }, 400);
 });
+$(".close").click(function(){
+    $(".collapse").removeClass('show')
+});
 });
 
