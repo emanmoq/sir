@@ -328,10 +328,10 @@ font-size: 1.1em;;
     border-radius: 5px;;
 }
 .modalForm .creditGroup .form-control{
-    padding-left:50px;
+    padding-left:40px;
 
 }
-.modalForm .form-control::placeholder{
+.modalForm .form-control::placeholder,.cardinput .credit-card-input::placeholder{
     font-size: .9em;
     color:#A3A3A3;;
 }
@@ -339,7 +339,7 @@ font-size: 1.1em;;
     position: absolute;
     color:#A3A3A3;
     font-size: 1.5em;
-    top: 38px;
+    top: 11px;
     left: 17px;
 }
 .modalBtn{
@@ -407,6 +407,93 @@ display: block;
 margin-bottom: 5px;
 width:90%;
 height: 3px;
+}
+.modalForm label.cardinput{
+    position: relative;
+    margin-left: 0.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: -webkit-transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translateX( 0 );
+    -ms-transform: translateX( 0 );
+    transform: translateX( 0 );
+    width:68%;
+}
+.credit-form-control{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.cardinput .credit-card-input {
+    border: 0px;
+    position: absolute;
+    width: 100%;
+    border:0;
+    color:#48C2C9
+}
+
+.credit-card-input:focus-visible,.credit-card-input:focus{
+    border:0;
+    box-shadow: none;
+    outline: 0;
+}
+.modalForm .credit-form-control label{
+    margin-bottom:  0;
+}
+.cardinput::after {
+    content: attr(data-max);
+    visibility: hidden;
+    height: 0;
+}
+.modalForm label.cardInfo{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: -webkit-transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: translateX( 4rem );
+    -ms-transform: translateX( 4rem );
+    transform: translateX( 4rem );
+    width:10%;
+}
+.cardInfo .credit-card-input {
+    border: 0px;
+    position: absolute;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+}
+
+.cardInfo::after,.credit-card-input:after {
+    content: attr(data-max);
+    visibility: hidden;
+    height: 0;
 }
 
 @media (min-width:300px) and (max-width:800px){
