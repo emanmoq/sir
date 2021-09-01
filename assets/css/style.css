@@ -108,7 +108,7 @@ margin-top:30px;
 }
 .welcomeText{
     font-size:1em;
-    width:65%;
+    width:64%;
 }
 .welcomeText p{
     margin:0;
@@ -553,4 +553,25 @@ margin-bottom: 20px;;
 .welcomeImg{
     width: 100%;;
 }
+.modalForm label.cardinput{
+    width:60%;
+}
+.socialIcons{
+    float: none;
+    margin-top:20px;
+}
+.welcomeText{
+    width:100%;
+}
+}
+@media(min-width:767px) and (max-width:1024px){
+    .welcomeImg{
+        width: 30%;
+    }
+    .welcomeText {
+        width:64%;
+    }
+    body{
+        font-size:14px;
+    }
 }
