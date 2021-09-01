@@ -489,13 +489,23 @@ height: 3px;
     border: 0;
     background-color: transparent;
 }
-
 .cardInfo::after,.credit-card-input:after {
     content: attr(data-max);
     visibility: hidden;
     height: 0;
 }
-
+.progress__bar{
+    background-color: #48C2C9;
+}
+.progress_streamtext:after{
+    display: none;
+}
+.progress{
+    height: 30px;
+}
+.progress__bar {
+    height: 30px;
+}
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:12px;

@@ -10,6 +10,8 @@
   <link href="assets/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="shortcut icon" href="assets/images/logo.png">
+  <link href="assets/css/aria-progressbar.css" rel="stylesheet">
+
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -96,7 +98,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="servicesBox">
+          <div class="servicesBox" data-toggle="modal" data-target="#createSite">
             <div class="serviceImg">
               <img src="assets/images/service3.png" alt="">
             </div>
@@ -206,8 +208,7 @@
       </div>
     </div>
   </section>
-  <div class="modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="serviceModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -220,14 +221,15 @@
           <form action="" class="modalForm">
             <div class="form-group creditGroup">
               <label for="">Debite or Credit Card</label>
-             
+
               <div class="form-control credit-form-control">
                 <i class="far fa-credit-card"></i>
                 <label class="sc-bxivhb cardinput" data-max="9999 9999 9999 9999 9999"><input id="card-number"
                     autocomplete="cc-number" class="credit-card-input " pattern="[0-9]*" placeholder="Card number"
                     type="text"></label>
-                <label class="sc-bxivhb cardInfo" data-max="MM / YY 9"><input id="card_expiry" name="card_expiry" autocomplete="cc-exp"
-                    class="credit-card-input " pattern="[0-9]*" placeholder="MM/YY" type="text"></label>
+                <label class="sc-bxivhb cardInfo" data-max="MM / YY 9"><input id="card_expiry" name="card_expiry"
+                    autocomplete="cc-exp" class="credit-card-input " pattern="[0-9]*" placeholder="MM/YY"
+                    type="text"></label>
                 <label class="sc-bxivhb cardInfo" data-max="999"><input id="cc" autocomplete="off"
                     class="credit-card-input " pattern="[0-9]*" placeholder="CC" type="text"></label>
               </div>
@@ -275,8 +277,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade" id="creataccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
+  <div class="modal fade" id="creataccount" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -309,11 +310,29 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="createSite" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title thirdService text-center">Creat Site</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="progressBar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="text/javascript" src="assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/aria-progressbar.js"></script>
+
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script>
     $(document).ready(function () {
