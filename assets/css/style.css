@@ -99,7 +99,7 @@ header{
     background-color: white;
 }
 .main{
-    padding:50px 80px;
+    padding:50px 0 80px;
 }
 .welcomeBox{
     background-color: white;
@@ -412,6 +412,7 @@ height: 3px;
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:12px;
+        overflow: hidden;
     }
     .modalMiniFormgroup{
         width:100%;
@@ -425,5 +426,19 @@ margin-bottom: 20px;;
 }
 .footerList{
     margin-top:20px;
+}
+.main{
+    padding:50px 0
+}
+.navbar-collapse{
+    background-color: white;
+    z-index: 999;
+}
+.subscribeText{
+    display: block;
+}
+.navbar-toggle{
+    position: absolute;
+    right:10%;
 }
 }
