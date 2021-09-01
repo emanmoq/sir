@@ -76,11 +76,12 @@ img{
     height:27px;
     margin-left:auto;
     transition: all .5s;
-    border-radius: 3px;;
+    border-radius: 3px;
+    line-height: 16px;
 }
 .languge:hover{
     background-color: #48C2C9;
-    color:#3F3E43;
+    color:white;
     transition:  all .5s;
 }
 header{
@@ -141,7 +142,8 @@ cursor: pointer;
     margin-bottom:20px;
 }
 .firstService{
-    color:#48C2C9;
+    color:#80AAFF;
+    
 }
 .servicesBox p{
     font-size:1em;
@@ -294,7 +296,7 @@ font-size: 1.1em;;
     margin-bottom: 14px;
 }
 .modal-content{
-    padding: 11px;
+    padding: 11px 16px;
 }
 .modal-body{
     padding:0;
@@ -589,7 +591,6 @@ margin-bottom: 20px;;
     .footerBG {
         bottom: -30%;
         height: 50%;}
-    }
 }
 @media(min-width:1024px) and (max-width:1200px){
     .main {
