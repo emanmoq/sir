@@ -14,23 +14,22 @@ jQuery(function ($) {
 
     });
     $("#createSite").on("shown.bs.modal", function() {
-
     'use strict';
     var pgb = $('#progressBar');
     var i = 0;
     pgb.ariaProgressbar({
-      progressClass: 'progress progress_streamtext',
+      progressClass: 'progress progress_streamtext ',
       maxVal: 100
     });
 
     var int = setInterval(function() {
       if (i < 100) {
-        i = i + 2;
+        i = i + 10;
         pgb.ariaProgressbar('update', i);
       } else {
         clearInterval(int);
       }
-    }, 400);
+    }, 300);
 });
 $(".close").click(function(){
     $(".collapse").removeClass('show')

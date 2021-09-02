@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 ol, ul {
 	list-style: none;
 }
-html{ overflow-y:scroll}
+
 body{background-color:#F4F7FC;font-family:"Din-regular"; font-size:14px; line-height:1.5em}
 
 h1, h2, h3, h4, h5, h6{   font-family: "Din-bold"; line-height:1em}
@@ -295,8 +295,15 @@ font-size: 1.1em;;
     justify-content: center;
     margin-bottom: 14px;
 }
+.modal.show {
+    display: flex !important;
+}
 .modal.show .modal-dialog{
-    margin:90px auto
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    width: 30%;
 }
 .modal-content{
     padding: 11px 16px;
@@ -498,17 +505,20 @@ height:auto;
     height: 0;
 }
 .progress__bar{
-    background-color: #48C2C9;
-}
+    background-color: #28a745;
+    transition: all .5s;
+    height: 30px;
+    -webkit-animation:progress-bar-stripes 1s linear infinite;animation:progress-bar-stripes 1s linear infinite;
+        background-image:linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size:1rem 1rem}
+
 .progress_streamtext:after{
     display: none;
 }
 .progress{
     height: 30px;
 }
-.progress__bar {
-    height: 30px;
-}
+
 .mobileLang{
     width: 40px;;
     padding:5px;
@@ -516,7 +526,6 @@ height:auto;
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:14px;
-        overflow: hidden;
     }
     .modalMiniFormgroup{
         width:100%;
@@ -581,6 +590,9 @@ margin-bottom: 20px;;
 .footerBG {
     bottom: -30%;
     height: 50%;}
+    .modal.show .modal-dialog{
+      width:100%;
+    }
 }
 @media(min-width:767px) and (max-width:1024px){
     .welcomeImg{
