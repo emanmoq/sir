@@ -13,8 +13,10 @@ jQuery(function ($) {
         }
 
     });
+
     $("#createSite").on("shown.bs.modal", function() {
     'use strict';
+    const reload=()=>window.location.reload();
     var pgb = $('#progressBar');
     var i = 0;
     pgb.ariaProgressbar({
@@ -26,11 +28,16 @@ jQuery(function ($) {
       if (i < 100) {
         i = i + 10;
         pgb.ariaProgressbar('update', i);
+     
       } else {
         clearInterval(int);
+        $("#createSite").modal("hide"); 
+        reload();
+
       }
     }, 300);
 });
+
 $(".close").click(function(){
     $(".collapse").removeClass('show')
 });
