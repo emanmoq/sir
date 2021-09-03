@@ -375,7 +375,7 @@ transition: all .5s;;
 .modalForm  select.form-control:before{
     position: absolute;
     content:"\f0dd";
-    font-family: "Font Awesome 5 Brands";
+    font-family:"Font Awesome 5 Brands";
     color:#A3A3A3;
     right:0;
     bottom:50%;
@@ -694,10 +694,13 @@ svg{
 .dropdown-toggle::after{
     border:0;
     content:"\f078";
-    font-family:"Font Awesome 5 Brands";
+    font-family:"Font Awesome";
+    right:0;
+    top:0;
+    margin:0;
     font-size: 1em;
-    color:#FFCD34
-    ;
+    color:#A5A5A5;
+    
 }
 .profInfoImg{
     width:76px;
