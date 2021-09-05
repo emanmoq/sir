@@ -829,7 +829,15 @@ margin-bottom: 16px;
     font-size: 1em;
     color:#707070;
 }
-
+.servicesBox p.stepNo{
+    color:#48C2C9;
+    font-size:1.1em;
+    margin-top:30px;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:14px;
