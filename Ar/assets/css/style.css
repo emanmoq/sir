@@ -961,7 +961,15 @@ margin-bottom: 5px;;
 .pricingBox.whiteBG:hover .dash{
     background-color: white;;
 }
-
+.servicesBox p.stepNo{
+    color:#48C2C9;
+    font-size:1.1em;
+    margin-top:30px;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
 @media (min-width:300px) and (max-width:800px){
     body{
         font-size:14px;
